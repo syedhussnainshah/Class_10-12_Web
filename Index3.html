@@ -37,6 +37,56 @@
             border-radius: 5px;
             border-top-left-radius: 10%;
             border-bottom-right-radius: 50%;
+            transition: all 2s linear;
+
+        }
+
+        ul>li:hover {
+            background-color: blue;
+            border: 2px dotted brown;
+            transform: rotateY(360deg);
+        }
+
+        h1 {
+            background-color: aqua;
+            position: relative;
+            height: 50vh;
+        }
+
+        h1::before {
+            content: "";
+            position: absolute;
+            transition: all 1s linear;
+            height: 0px;
+
+
+        }
+
+        h1::after {
+            content: "";
+            position: absolute;
+            transition: all 5s linear;
+            height: 0px;
+
+
+        }
+
+        h1:hover:before {
+            content: "";
+            position: absolute;
+            height: 50%;
+            width: 100%;
+            background-color: black;
+        }
+
+        h1:hover:after {
+            content: "";
+            position: absolute;
+            height: 50%;
+            width: 100%;
+
+            background-color: rgb(219, 15, 15);
+
         }
     </style>
     <ul>
@@ -44,6 +94,7 @@
         <li>About</li>
         <li>Contact Uss</li>
     </ul>
+    <h1>Hello The Word</h1>
 </body>
 
 </html>
