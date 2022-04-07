@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        :root {
+            --bgColor: rgb(0, 125, 23);
+            --bg2Colo: rgb(209, 118, 5);
+            --paddingCustom: 10px 30px;
+        }
+
+        .MainDiv {
+            width: 100%;
+            height: 30vh;
+            background-color: var(--bgColor);
+        }
+
+        h1 {
+            color: var(--bgColor);
+            background-color: var(--bg2Colo);
+            margin: var(--paddingCustom);
+
+        }
+
+        ul {
+            display: flex;
+        }
+
+        @media screen AND (max-width: 700px) {
+
+            h1 {
+                color: var(--bg2Colo);
+                background-color: var(--bgColor);
+                padding: var(--paddingCustom);
+
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+    <div class="MainDiv">
+
+    </div>
+    <h1>Hello</h1>
+    <ul>
+        <li>Home</li>
+        <li>ABout</li>
+        <li>contact</li>
+    </ul>
+</body>
+
+</html>

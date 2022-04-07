@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .MainDiv {
+            height: 100vh;
+            width: 100%;
+            /* background-color: blue; */
+            animation: myMove 10s infinite;
+            transition: all 2s linear;
+        }
+
+        .MainDiv:hover {
+            width: 50%;
+        }
+
+        @keyframes myMove {
+            0% {
+                background-image: url('3.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+            25% {
+                background-image: url('5.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+            50% {
+                background-image: url('1.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+            75% {
+                background-image: url('4.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+
+            100% {
+                background-image: url('2.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+        }
+    </style>
+    <div class="MainDiv">
+        <ul>
+            <li>helo</li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
