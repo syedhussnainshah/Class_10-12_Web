@@ -9,10 +9,15 @@
 </head>
 
 <body>
+  <button onclick="press(3,5)">Click Me</button>
   <script>
-    let arr = ['HTMl', 'CSS','BOOTSTRAP','JAVASCRIPT',"PHP","REACT"];
-    arr.reverse();
-    console.log(arr);
+    function press(a, b) {
+      let x = a + b;
+      return x;
+
+    }
+    let z = press(10, 9);
+    alert(z);
   </script>
 </body>
 
